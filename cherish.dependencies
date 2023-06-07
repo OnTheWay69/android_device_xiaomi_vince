@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "cherish-devices",
+    "repository": "vendor_xiaomi_vince",
+    "target_path": "vendor/xiaomi/vince",
+     "branch": "tiramisu"
+  },
+  {
+    "remote": "cherish-devices",
+    "repository": "kernel_xiaomi_vince",
+    "target_path": "kernel/xiaomi/vince",
+    "branch": "tiramisu"
+  },
+  {
+    "remote": "cherish-gitlab",
+    "repository": "vince-clang-17",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-aosp",
+    "branch": "17"
+  }
+]
