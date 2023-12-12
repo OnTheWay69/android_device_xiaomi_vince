@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_vince.mk
+    $(LOCAL_DIR)/superior_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_vince-user \
-    cherish_vince-userdebug \
-    cherish_vince-eng
+    superior_vince-user \
+    superior_vince-userdebug \
+    superior_vince-eng
