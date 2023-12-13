@@ -1,5 +1,7 @@
-# Spark-OS
-ro.spark.device.name=Redmi 5 Plus
-ro.spark.group.url=https://t.me/anandhansprojects_chat
-ro.spark.maintainer=Anandhan
-ro.spark.maintainer.username=anandhan07x
+# Maintainer
+ro.spos.maintainer=Underclock
+
+#skial_gl_optimization
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true

@@ -31,13 +31,26 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit some common Spark-OS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
-# Spark flags
+# Superior flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_MATLOG := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_MOTO_CALCULATOR := true
+TARGET_SUPPORTS_BLUR := true
+SUPERIOR_UDFPS_ANIMATIONS := true
+USE_MOTO_CLOCK := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+BUILD_WITH_GAPPS := false
+TARGET_CORE_GMS := false
+USE_QUICKPIC := true
+USE_DUCKDUCKGO := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := Cherish_vince
+PRODUCT_NAME := superior_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
@@ -45,6 +58,10 @@ TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer
+PRODUCT_SYSTEM_PROPERTIES += \
+     ro.spos.maintainer=Underclock
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys"
