@@ -2,6 +2,6 @@
 ro.spos.maintainer=Underclock
 
 #skial_gl_optimization
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=skiagl_threaded
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
