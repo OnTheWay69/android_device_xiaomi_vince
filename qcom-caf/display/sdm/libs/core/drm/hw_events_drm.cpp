@@ -216,6 +216,13 @@ void *HWEventsDRM::DisplayEventHandler() {
     DLOGE("Couldn't set SCHED_RR: %d", errno);
   }
 
+struct sched_param param = {0};
+  param.sched_priority = 2;
+  if (sched_setscheduler(0, SCHED_RR, &param) != 0) {
+    DLOGE("Couldn't set SCHED_RR: %d", errno);
+  }
+
+
   while (!exit_threads_) {
     if (RegisterVSync() != kErrorNone) {
       pthread_exit(0);
