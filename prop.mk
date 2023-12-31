@@ -119,7 +119,8 @@ bluetooth.hardware.power.operating_voltage_mv=3300
 
 # Blur
 PRODUCT_PRODUCT_PROPERTIES += \
-persist.sys.sf.disable_blurs=1
+persist.sys.sf.disable_blurs=1 \
+ro.launcher.blur.appLaunch=0
 
 # Boot
 PRODUCT_SYSTEM_PROPERTIES += \

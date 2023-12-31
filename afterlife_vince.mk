@@ -29,18 +29,19 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Inherit some common Spark-OS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-# Spark flags
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_BOOT_ANIMATION_RES := 720
-NO_APERTURE := true
+# Afterlife flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+AFTERLIFE_MAINTAINER := 初心者
+AFTERLIFE_GAPPS := false
+USE_PIXEL_CHARGING := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_SUPPORT_BLUR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := spark_vince
+PRODUCT_NAME := afterlife_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
