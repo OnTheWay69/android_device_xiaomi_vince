@@ -39,7 +39,7 @@ AFTERLIFE_MAINTAINER := NotAnymore
 AFTERLIFE_GAPPS := false
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
-
+TARGET_SUPPORT_BLUR := true
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := afterlife_vince
