@@ -62,8 +62,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-aosp
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
