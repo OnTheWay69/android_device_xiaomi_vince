@@ -35,11 +35,16 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_BOOT_ANIMATION_RES := 720
-AFTERLIFE_MAINTAINER := NotAnymore
-AFTERLIFE_GAPPS := false
+AFTERLIFE_MAINTAINER := AL
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+AFTERLIFE_EXTRA := true
+BUILD_GALLERYGO := true
+BUILD_GMAIL := true
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
 TARGET_SUPPORT_BLUR := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := afterlife_vince
