@@ -329,7 +329,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # System
 PRODUCT_SYSTEM_PROPERTIES += \
-persist.sys.binary_xml=false
+persist.sys.binary_xml=false \
 
 # Time Services
 PRODUCT_VENDOR_PROPERTIES += \
